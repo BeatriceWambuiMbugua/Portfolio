@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    padding: 20px;
+    color: white;
+    font-size: 24px; 
+}
+.main{
+    max-width: 1000px;
+    margin: auto;
+}
+h1{
+    font-size: 70px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    word-break: break-all;
+}
+h1:hover{
+    color: turquoise;
+    box-shadow: 0px 5px 5px 0px yellow;
+}
+h2{
+    text-align: center;
+    font-weight: bolder;
+}
+h2:hover{
+    color: yellowgreen;
+    box-shadow: 0px 5px 5px 0px yellow;
+}
+}
+.row{
+    margin: 8px -16px;
+}
+.row, .row>.column{
+    padding: 8px;
+}
+.column{
+    float: left;
+    width: 30%;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.content{
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    line-height: 2;
+}
+@media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+
